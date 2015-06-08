@@ -6,11 +6,30 @@ While writing an [Enlive tutorial](http://viewer.gorilla-repl.org/view.html?sour
 Hence I wrote a plugin for Gorilla-repl that can display indented html. 
 
 
-To use this plugin in your project, import this using
+To use this plugin in your project, add this dependency in your project.clj
 
 [![Clojars Project](http://clojars.org/gorilla-indented-html-renderer/latest-version.svg)](http://clojars.org/gorilla-indented-html-renderer)
 
-and run *lein gorilla*.
+In your worksheet, import thus:
+```clojure
+(ns your-ns
+  (:require [[html-indent.core :refer [view]])
+```
+
+To view html
+
+```clojure
+(view "<h1><div>abc</div></h1>")
+```
+
+which is displayed in the gorilla worksheet as
+
+```raw
+<h1>
+ <div>abc</div>
+</h1>
+```
+
 
 ## License
 
