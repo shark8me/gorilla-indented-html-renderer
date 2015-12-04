@@ -1,4 +1,4 @@
-(defproject gorilla-indented-html-renderer "0.1.0-SNAPSHOT"
+(defproject gorilla-indented-html-renderer "0.1.0"
   :description "A Gorilla-repl plugin to display html in indented fashion"
   :url "https://github.com/shark8me/gorilla-indented-html-renderer"
   :license {:name "Eclipse Public License"
